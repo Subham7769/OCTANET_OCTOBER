@@ -1,0 +1,686 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* *************************************header section***************************** */
+header {
+  position: fixed;
+  top: 0rem;
+  width: 100vw;
+  z-index: 100000000;
+  /* background-color: #333333; */
+  background-color: transparent;
+}
+.navbar-brand {
+  color: white !important;
+}
+.nav-link {
+  color: white !important;
+}
+.nav-link:hover {
+  border-radius: 3px;
+  text-decoration: underline;
+  text-underline-offset: 0.6em;
+  font-weight: 600;
+}
+
+/* ******************************Hero Section*********************************** */
+section {
+  height: 100vh;
+  width: 100vw;
+  padding: 1.5rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+/* .hero {
+  background: url(./Assets/hero_bg.png)
+    no-repeat center center / cover fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+h1 {
+  font-size: 10vw;
+  margin: 0;
+  background-image: url(https://th.bing.com/th/id/OIP.8EqUdFXMeB97k3EXPh0KAwHaEo?pid=ImgDet&rs=1);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.hero > p {
+  font-size: 1.5rem;
+  color: white;
+  width: 50%;
+} */
+
+
+
+.hero {
+  background-color: #000000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+
+}
+.intro{
+  /* border: 1px solid red; */
+  flex: 0.4;
+  height: 60vh;
+  position: relative;
+}
+.intro>p {
+color: white;
+}
+.intro > h1 {
+  font-size: 3rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-weight: 700;
+}
+.intro > h1 >span{
+  color: orange;
+
+}
+.profile{
+  flex: 0.6;
+  height: 70vh;
+  width: 50%;
+/* border: 1px solid red; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.profile>img{
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.resume{
+  position: absolute;
+  margin: 5rem 5rem;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: orange;
+  transition: all 0.5s ease;
+}
+.resume:hover{
+  color: white;
+  transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****************************About Us section**************************** */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  height: 90%;
+  /* border: 1px solid red; */
+  padding: 0.8rem;
+}
+.details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 90%;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.profile-img {
+  width: 30%;
+  height: 90%;
+  /* border: 1px solid red; */
+}
+.profile-img>img {
+width: 100%;
+height: 100%;
+}
+.about-intro {
+  padding: 0.5;
+  width: 50%;
+  height: 90%;
+  /* border: 1px solid red; */
+}
+  .about-intro>p {
+    text-align: justify;
+  }
+.about-intro>h5>span{
+  color: orange;
+}
+.about-table{
+width: 100%;
+border: #d10000;
+}
+td{
+padding: 0.4rem;
+}
+
+/* *****************************Value preposition section************************************* */
+.value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+.value-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90vw;
+  height: 80vh;
+  /* border: 1px solid red; */
+  padding: 0.8rem;
+  }
+  .value-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    height: 90%;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  .value-card {
+    display: flex;
+    height: 45%;
+    width: 45%;
+    border-radius: 0.5rem;
+    /* border: 1px solid red; */
+    overflow: hidden;
+  }
+  .value-text {
+    width: 65%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+  }
+  .value-text-heading{
+    color: orange;
+    font-weight: 600;
+  }
+  .value-text-body{
+    text-align: justify;
+  }
+  .value-img {
+    width: 35%;
+    height: 100%;
+    /* border: 1px solid blue; */
+  }
+  .value-img>img {
+    width: 80%;
+    height: 80%;
+  }
+
+/* ******************************Skills Section************************************* */
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 80%;
+  height: 80%;
+  /* border: 1px solid red; */
+  padding: 0.8rem;
+  overflow-y: scroll;
+}
+.Skills-card {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+.Skills-card > img {
+  width: 12rem;
+  height: 12rem;
+}
+.Skills-card:hover {
+  transform: scale(1.1);
+}
+
+/* *******************************Certificates Section******************************** */
+.certificate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    /* background-color: rgb(55, 4, 103); */
+    background-color: rgb(39, 39, 39);
+    color: white;
+  }
+  .certificate-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 0.2;
+    overflow-y: scroll;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    height: 80vh;
+    min-width: 12rem;
+  }
+  .certificate-list::-webkit-scrollbar {
+    display: none;
+  }
+  .certificate-list > a {
+    text-decoration: none;
+    color: black;
+  }
+  .certificate-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 90%;
+    height: 17rem;
+    border-radius: 0.5rem;
+    background-image: url(./Assets/Resume/folder_1975643.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  .certificate-title {
+    rotate: 1 0 0 90deg;
+  }
+  .certificate-card:hover .certificate-title {
+    transform: rotateX(-90deg);
+  }
+  .certificate-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(53, 53, 53);
+    opacity: 0.8;
+    clip-path: circle(50% at 50% 50%);
+    transition: all 0.3s ease-out;
+  }
+  .certificate-Preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+  }
+  .certificate-Preview > a {
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .certificate-show {
+    flex: 0.75;
+    height: 80vh;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .certificate-show::-webkit-scrollbar {
+    display: none;
+  }
+
+
+/* ********************************Project Section************************************ */
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  background-color: #000000;
+  color: white;
+}
+.project-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex: 0.2;
+  overflow-y: scroll;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  height: 80vh;
+  min-width: 12rem;
+}
+.project-list::-webkit-scrollbar {
+  display: none;
+}
+.project-list > a {
+  text-decoration: none;
+  color: black;
+}
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 90%;
+  height: 17rem;
+  border-radius: 0.5rem;
+
+}
+.Cookpal{
+  background-image: url(./Assets/Project/cookpal.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Blinkit{
+  background-image: url(./Assets/Project/Blinkit.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Jira{
+  background-image: url(./Assets/Project/Jira.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Acciojob{
+  background-image: url(./Assets/Project/Acciojob.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.FoodDelivery{
+  background-image: url(./Assets/Project/FoodDelivery.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Spotify{
+  background-image: url(./Assets/Project/Spotify.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Timer{
+  background-image: url(./Assets/Project/Timer.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.project-title {
+  rotate: 1 0 0 90deg;
+}
+.project-card:hover .project-title {
+  transform: rotateX(-90deg);
+}
+.project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgb(53, 53, 53);
+  opacity: 0.8;
+  clip-path: circle(50% at 50% 50%);
+  transition: all 0.3s ease-out;
+}
+.project-Preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 80%;
+  height: 100%;
+}
+.project-Preview > a {
+  font-weight: 800;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.project-show {
+  flex: 0.75;
+  height: 80vh;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.project-show::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hire Me Button */
+.Hire{
+  padding: 10px 15px;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: orange;
+}
+
+/* ******************************Contact Section***************************************** */
+#Contact {
+  background: url(./Assets/hero_bg.png)
+    no-repeat center center / cover fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(63, 69, 104, 0.568); /* Translucent white background */
+  border-radius: 10px;
+  padding: 1rem;
+  width: 400px;
+  height: 300px;
+}
+
+form {
+  text-align: center;
+  /* border: 1px solid red; */
+  width: 400px;
+ 
+}
+
+input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: orange; /* Green button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-weight: 700;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.1); /* Darker green on hover */
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* *************************************header section***************************** */
+  .navbar-collapse {
+    background-color: rgba(46, 44, 44, 0.705);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+  .navbar-brand {
+    color: white !important;
+  }
+  .nav-link {
+    font-weight: 600;
+    text-shadow: 3px 3px 5px black;
+  }
+  .nav-link:hover {
+    text-decoration: none;
+    text-underline-offset: 0em;
+    font-weight: 500;
+  }
+
+  /* ******************************Skills Section************************************* */
+  .skills-container {
+    margin-top: 2rem;
+    gap: 0.5rem;
+    width: 100%;
+    height: 90%;
+    padding: 0.3rem;
+  }
+  .Skills-card {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 0.2rem;
+  }
+  .Skills-card > img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  /* ********************************Project Section************************************ */
+  .project {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .project-list {
+    margin-top: 2rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    flex: 0.3;
+    padding: 0.1rem;
+    width: 100%;
+  }
+  .project-card {
+    height: 90%;
+    width: 5rem;
+  }
+  .project-title {
+    width: 4rem;
+    height: 4rem;
+  }
+  .project-Preview {
+    width: 80%;
+    height: 100%;
+  }
+  .project-Preview > a {
+    font-size: 0.7rem;
+    font-weight: 500;
+    font-size: rem;
+  }
+  .project-show {
+    flex: 0.65;
+    width: 100%;
+  }
+
+/* *******************************Certificates Section******************************** */
+  .certificate {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .certificate-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    flex: 0.3;
+    padding: 0.1rem;
+    width: 100%;
+  }
+  .certificate-card {
+    height: 90%;
+    width: 5rem;
+  }
+  .certificate-title {
+    width: 4rem;
+    height: 4rem;
+  }
+  .certificate-Preview {
+    width: 80%;
+    height: 100%;
+  }
+  .certificate-Preview > a {
+    font-size: 0.7rem;
+    font-weight: 500;
+    font-size: rem;
+  }
+  .certificate-show {
+    margin-top: 2rem;
+    flex: 0.65;
+    width: 100%;
+  }
+}
