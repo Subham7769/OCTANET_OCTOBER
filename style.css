@@ -15,7 +15,7 @@ header {
   top: 0rem;
   width: 100vw;
   z-index: 100000000;
-  /* background-color: #333333; */
+  background-color: #333333;
   background-color: transparent;
 }
 .navbar-brand {
@@ -39,31 +39,6 @@ section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
-/* .hero {
-  background: url(./Assets/hero_bg.png)
-    no-repeat center center / cover fixed;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-h1 {
-  font-size: 10vw;
-  margin: 0;
-  background-image: url(https://th.bing.com/th/id/OIP.8EqUdFXMeB97k3EXPh0KAwHaEo?pid=ImgDet&rs=1);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.hero > p {
-  font-size: 1.5rem;
-  color: white;
-  width: 50%;
-} */
-
 .hero {
   background-color: #000000;
   position: relative;
@@ -243,11 +218,12 @@ td {
 }
 
 /* ******************************Skills Section************************************* */
+
 .skills {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#131212 ;
+  background-color: #131212;
   color: white;
 }
 .skills-container {
@@ -316,7 +292,19 @@ td {
   width: 90%;
   height: 17rem;
   border-radius: 0.5rem;
-  background-image: url(./Assets/Resume/folder_1975643.png);
+  background-image: url(./Assets/icon/file.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Soft_Skills{
+  background-image: url(./Assets/Certificates/Certificate-img/SoftSkills.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Presentaion{
+  background-image: url(./Assets/Certificates/Certificate-img/Presentation.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -371,7 +359,7 @@ td {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.3rem;
-  background-color:#131212 ;
+  background-color: #131212;
   color: white;
 }
 .project-list {
@@ -403,6 +391,48 @@ td {
   width: 90%;
   height: 17rem;
   border-radius: 0.5rem;
+}
+.project-title {
+  rotate: 1 0 0 90deg;
+}
+.project-card:hover .project-title {
+  transform: rotateX(-90deg);
+}
+.project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgb(53, 53, 53);
+  opacity: 0.8;
+  clip-path: circle(50% at 50% 50%);
+  transition: all 0.3s ease-out;
+}
+.project-Preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 80%;
+  height: 100%;
+}
+.project-Preview > a {
+  font-weight: 800;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.project-show {
+  flex: 0.75;
+  height: 80vh;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.project-show::-webkit-scrollbar {
+  display: none;
 }
 .Cookpal {
   background-image: url(./Assets/Project/cookpal.png);
@@ -453,51 +483,9 @@ td {
   background-size: cover;
 }
 
-.project-title {
-  rotate: 1 0 0 90deg;
-}
-.project-card:hover .project-title {
-  transform: rotateX(-90deg);
-}
-.project-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  width: 8rem;
-  height: 8rem;
-  background-color: rgb(53, 53, 53);
-  opacity: 0.8;
-  clip-path: circle(50% at 50% 50%);
-  transition: all 0.3s ease-out;
-}
-.project-Preview {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
-  width: 80%;
-  height: 100%;
-}
-.project-Preview > a {
-  font-weight: 800;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-.project-show {
-  flex: 0.75;
-  height: 80vh;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-.project-show::-webkit-scrollbar {
-  display: none;
-}
-
 /* Hire Me Button */
 .Hire {
+  display: none;
   padding: 10px 15px;
   position: fixed;
   top: 10px;
@@ -514,65 +502,86 @@ td {
   font-weight: 700;
   transform: scale(1.1);
 }
-.social-tag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  background-color: black;
-  margin: 10px;
-}
+
 /* ******************************Contact Section***************************************** */
 #Contact {
-  background: url(./Assets/hero_bg.png) no-repeat center center / cover fixed;
-  color: white;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.box{
+  margin-top: 2rem;
+  border-radius: 5px;
+  width: 60vw;
+  height: 80vh;
+  background-color: white;
+}
+.Get_in_Touch{
+  width: 50%;
+  height: 65vh;
+  margin-left: -5rem;
+  border: none !important;
+  padding: 1.5rem;
+  background-color: orange;
 
-.form-container {
+}
+.photo-album{
+  width: 100%;
+  height: 20%;
+}
+.Get_in_Touch >ul>li{
+  list-style-type: none;
+  margin: 1rem;
+
+}
+.photo-album>ul>li{
+  list-style-type: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-size: 2rem;
+  text-align: center;
+}
+.Form-area{
+  width:55%;
+  height: 80%;
+  margin-left: 3rem;
+}
+#contactForm{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(63, 69, 104, 0.568); /* Translucent white background */
-  border-radius: 10px;
-  padding: 1rem;
-  width: 400px;
-  height: 300px;
-}
-
-form {
-  text-align: center;
-  /* border: 1px solid red; */
-  width: 400px;
-}
-
-input[type="email"] {
+  gap: 0.5rem;
   width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+
+}
+input[type=text], input[type=email],input[type=submit],textarea{
+padding: 10px;
+width: 90%;
+border-radius: 0.3rem;
+border: 1px solid orange;
+}
+input[type=submit]{
+  background-color: orange;
+}
+.Social-Icon{
+  width: 100%;
+  height: auto;
+}
+.photo-album>ul>:hover{
+  box-shadow: 0px 0px 10px black!important;
+  background-color: orange;
 }
 
-input[type="submit"] {
-  background-color: orange; /* Green button color */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  font-weight: 700;
-}
 
-input[type="submit"]:hover {
-  transform: scale(1.1); /* Darker green on hover */
-}
+
+/* ******************************************************************************************** */
 
 @media only screen and (max-width: 768px) {
   /* *************************************header section***************************** */
@@ -597,22 +606,127 @@ input[type="submit"]:hover {
     font-weight: 500;
   }
 
+  /* ***********************************Hero section******************************* */
+
+  section {
+    padding: 0.5rem;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .inner-section {
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+  }
+  .profile {
+    margin-top: 2.5rem;
+    flex: 0.4;
+    order: 1;
+  }
+  .intro {
+    flex: 0.6;
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+  .intro > p {
+    font-size: 1rem;
+  }
+  .intro > h1 {
+    font-size: 1.5rem;
+  }
+  .resume {
+    position: static;
+    margin: 0rem;
+    margin-top: 12rem;
+  }
+
+  /* ******************************About Section************************************* */
+  .about {
+flex-direction: column;
+  }
+  .about-container {
+    margin-top: 2rem;
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid red; */
+    padding: 0rem;
+  }
+  .details {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 0rem;
+    /* border: 1px solid red; */
+  }
+  .profile-img {
+    display: none;
+  }
+  .about-intro {
+    padding: 0.2rem;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    overflow-y: scroll;
+  }
+  .about-table,  .about-intro>h5,hr {
+    /* display: none; */
+    font-size: 0.4rem;
+  }
+
+  /* ******************************Value Section************************************* */
+
+  .value-container {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 90vw;
+    height: 80vh;
+    /* border: 1px solid red; */
+    padding: 0rem;
+    overflow-y: scroll;
+
+  }
+  .value-details {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    /* border: 1px solid red; */
+  }
+  .value-card {
+    display: flex;
+    height: 90%;
+    width: 100%;
+    border-radius: 0.5rem;
+    /* border: 1px solid red; */
+    overflow: hidden;
+  }
+  .value-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .value-text-body {
+    display: none;
+  }
+
+  
+
   /* ******************************Skills Section************************************* */
   .skills-container {
-    margin-top: 2rem;
+    margin-top: 0rem;
     gap: 0.5rem;
     width: 100%;
     height: 90%;
-    padding: 0.3rem;
   }
   .Skills-card {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 0.2rem;
   }
   .Skills-card > img {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   /* ********************************Project Section************************************ */
@@ -621,7 +735,7 @@ input[type="submit"]:hover {
     flex-direction: column;
   }
   .project-list {
-    margin-top: 2rem;
+    margin-top: 2.3rem;
     flex-direction: row;
     justify-content: flex-start;
     overflow-x: scroll;
@@ -657,20 +771,21 @@ input[type="submit"]:hover {
     flex-direction: column;
   }
   .certificate-list {
+    margin-top: 3rem;
     flex-direction: row;
     justify-content: flex-start;
     overflow-x: scroll;
-    flex: 0.3;
-    padding: 0.1rem;
+    flex: 0.25;
+    padding: 0rem;
     width: 100%;
   }
   .certificate-card {
-    height: 90%;
-    width: 5rem;
+    height: 80%;
+    width: 4rem;
   }
   .certificate-title {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
   }
   .certificate-Preview {
     width: 80%;
@@ -682,8 +797,52 @@ input[type="submit"]:hover {
     font-size: rem;
   }
   .certificate-show {
-    margin-top: 2rem;
-    flex: 0.65;
+    flex: 0.;
     width: 100%;
   }
+
+  /* ******************************Contact Section***************************************** */
+#Contact {
+  flex-direction: column;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 2rem;
+  width: 90vw;
+  padding: 0.5rem;
+  overflow-y: scroll;
+}
+.Get_in_Touch{
+  width: 90%;
+  height: auto;
+  margin: 0;
+  padding: 1.5rem;
+  background-color: orange;
+  font-size: 0.8rem;
+}
+.Form-area{
+  height: auto;
+  width:90%;
+  margin: 0rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+#contactForm{
+  width: 100%;
+}
+
+input[type=submit]{
+  background-color: orange;
+}
+.Social-Icon{
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+
+
 }
